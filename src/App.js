@@ -1,8 +1,7 @@
 import './App.css'
 import { useState } from 'react'
-// import Modal from 'my-personal-button'
+import { Modal } from 'my-personal-button'
 // import Modal from '../dist/index'
-import { Modal } from './lib/index'
 
 function App() {
   const [isOpen, setIsOpen] = useState(false)
