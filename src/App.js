@@ -1,9 +1,12 @@
 import './App.css';
-import { Button } from 'my-personal-button'
+import Modal from './lib/components/Modal';
+
 function App() {
   return (
     <div className="App">
-      <Button kind="primary" id="1" type="button" name="button" value="button" disabled={false} handleClick={() => console.log('clicked')} label="Click Me" />
+      <Modal isOpen={true} allowEscape={true}>
+        <h1>Modal</h1>
+      </Modal>
     </div>
   );
 }
