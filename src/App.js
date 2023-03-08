@@ -1,8 +1,9 @@
-import './App.css';
+import './App.css'
 import Modal from 'my-personal-button'
+import { useState } from 'react'
 
 function App() {
-  const [isOpen, setIsOpen] = React.useState(false)
+  const [isOpen, setIsOpen] = useState(false)
 
   const handleOpen = () => setIsOpen(true)
   const handleClose = () => setIsOpen(false)
@@ -13,7 +14,7 @@ function App() {
         <h1>Modal Content</h1>
       </Modal>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

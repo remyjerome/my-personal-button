@@ -1,1 +1,2 @@
-export * from './Modal'
+import Modal from './components'
+export { Modal }
