@@ -1,14 +1,14 @@
 import React from 'react'
-const Button = (props) => {
+const Button = ({kind, id, type, name, value, disabled, handleClick, label}) => {
     return (
-        <button className={`btn btn--${props.kind} CTA`}
-            data-id={props.id}
-            type={props.type}
-            name={props.name}
-            value={props.value}
-            disabled={props.disabled}
-            onClick={props.handleClick}>
-            <h4>{props.label}</h4>
+        <button className={`btn btn--${kind} CTA`}
+            data-id={id}
+            type={type}
+            name={name}
+            value={value}
+            disabled={disabled}
+            onClick={handleClick}>
+            <h4>{label}</h4>
         </button>
     )
 }
